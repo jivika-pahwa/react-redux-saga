@@ -1,0 +1,32 @@
+React -> 
+
+Library for the development of web application.
+Fast & Easy to use. 
+
+Not a complete package as its not a framework. We need to add library for every functionality.
+No State Management b/w components, you can use contextAPI but for smaller projects
+
+
+Redux -> 
+
+State Management library or global data Management.
+communicate within components - passing state from one component to another.
+
+A predictable state container - that means change at one place should reflect to another place as well
+for example if am changing a quantity from 1 with 2 it should reflect in total billing amount as well.
+
+like a store room where we can store our data & get our data back when in need.
+
+how we can use redux-data?
+redux create a wrapper above react application.
+
+view -> action -> reducer -> store -> back to view 
+
+
+Saga ->
+API Data Handling middleware
+API Calling can be done using -> Promise, async - await feature
+Here we will use Saga which is a middleware for calling async operations (API).
+whenever we'll call API, we will call Saga through action.
+
+

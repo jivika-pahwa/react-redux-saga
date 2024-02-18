@@ -1,0 +1,5 @@
+Redux Fundamentals -
+
+The function* declaration creates a binding of a new generator function to a given name. 
+A generator function can be exited and later re-entered, with its context (variable bindings) 
+saved across re-entrances.

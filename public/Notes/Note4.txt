@@ -1,0 +1,15 @@
+fetching API - fetch() Method
+
+previously, have used this fetch() method of JS
+    
+let ApiData = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+but this wont give the result cuz its mandatory to use custom middleware for async actions.
+middleware like thunk or Saga.
+
+
+Redux - Saga
+
+Generator function -> used to handle async Operations.
+Part of ES7/8
+return data when it gets the result from API (Async Operation)
+need to use yield as well

@@ -1,0 +1,18 @@
+Actions -> 
+
+plain JS functions
+actions used for transfer data from react js -> and then store data into redux with the help of reducer.
+must have type key in return statement
+
+type should be same in both action & reducer
+action is called with the help of useDispatch hook.
+
+
+Reducer ->
+
+handle store data
+take data from actions -> further store in redux store
+must have rootreducer
+
+must have return statement & initial data as well.
+use switch statement whhile working with reducers rather using if, else-if statements

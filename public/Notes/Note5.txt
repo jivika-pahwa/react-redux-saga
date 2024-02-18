@@ -1,0 +1,3 @@
+Json Server API (Fake API Creation)
+
+create fake or dummy API's, just for practice only -> no DB connection is used here
