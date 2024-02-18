@@ -1,0 +1,37 @@
+Redux Thunk Middleware
+
+Async Action Creators
+
+Package required :
+1. axios -> is a function for API Calling
+2. redux-thunk package -> its a middleware, used to define async action creator.
+
+Now, what is action creator function?
+It a function which not only return action payload but also return a function.
+here, fetchUsers() is a fn which consists of business logic + action dispatching.
+This is what redux-thunk middleware do.
+such functions are called Async action creator functions
+
+Example : 
+
+export const fetchUsers = () => {
+  return (dispatch) => {
+    dispatch(fetchUsersRequest())
+    axios
+      .get('https://jsonplaceholder.typicode.com/users')
+      .then(response => {
+        // response.data is the users
+        const users = response.data
+        dispatch(fetchUsersSuccess(users))
+      })
+      .catch(error => {
+        // error.message is the error message
+        dispatch(fetchUsersFailure(error.message))
+      })
+  }
+}
+
+The above Example is what difficult to test while doing unit testing.
+Therefore, redux-saga middleware is used to segregate business logic and action payload.
+In Saga, we only write business logic and communicate (action with saga) with the help of action "type"
+which further makes the code simpler & easy to test.
