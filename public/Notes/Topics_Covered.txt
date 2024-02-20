@@ -1,0 +1,19 @@
+Topics Covered :
+
+1. map()
+2. filter()
+3. reduce()
+4. useSelector()
+5. useDispatch()
+6. yield
+7. action
+8. reducer
+9. generator functions
+10. configure store
+11. attach middleware saga with store
+12. JSX
+13. template literals
+14. event handler functions (onChange,OnClick)
+15. fetch() to call API
+16. handling Async Operations using Saga 
+17. how action, saga & reducer communicate with each other.
